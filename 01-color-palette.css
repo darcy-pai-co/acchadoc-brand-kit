@@ -1,0 +1,73 @@
+/**
+ * AcchaDoc Brand Colors - Concept A: Friendly Trust
+ * Design System - Color Palette
+ */
+
+:root {
+  /* PRIMARY COLORS */
+  --color-primary: #0891B2;        /* Cyan 600 - Medical trust, approachable */
+  --color-primary-hover: #0E7490;  /* Cyan 700 - Hover state */
+  --color-primary-light: #CFFAFE;  /* Cyan 100 - Light backgrounds */
+
+  --color-secondary: #10B981;      /* Emerald 500 - Health, approval, "accha!" */
+  --color-secondary-hover: #059669; /* Emerald 600 - Hover state */
+  --color-secondary-light: #D1FAE5; /* Emerald 100 - Light backgrounds */
+
+  --color-accent: #F59E0B;         /* Amber 500 - Warmth, energy */
+  --color-accent-hover: #D97706;   /* Amber 600 - Hover state */
+  --color-accent-light: #FEF3C7;   /* Amber 100 - Light backgrounds */
+
+  /* NEUTRALS */
+  --color-text-primary: #111827;   /* Gray 900 - Primary text */
+  --color-text-secondary: #6B7280; /* Gray 500 - Secondary text */
+  --color-text-muted: #9CA3AF;     /* Gray 400 - Muted text */
+
+  --color-bg-primary: #FFFFFF;     /* White - Main background */
+  --color-bg-secondary: #F9FAFB;   /* Gray 50 - Alternate background */
+  --color-bg-tertiary: #F3F4F6;    /* Gray 100 - Subtle backgrounds */
+
+  --color-border: #E5E7EB;         /* Gray 200 - Default borders */
+  --color-border-focus: #0891B2;   /* Primary - Focus borders */
+
+  /* SEMANTIC COLORS */
+  --color-success: #10B981;        /* Emerald 500 - Success states */
+  --color-error: #EF4444;          /* Red 500 - Error states */
+  --color-warning: #F59E0B;        /* Amber 500 - Warning states */
+  --color-info: #0891B2;           /* Cyan 600 - Info states */
+}
+
+/* Usage Examples */
+
+/* Primary CTA Button */
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Trust Badge */
+.badge-trust {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Success State */
+.success-message {
+  background-color: var(--color-secondary-light);
+  border-left: 4px solid var(--color-success);
+  color: var(--color-text-primary);
+}
+
+/* Accent Highlight */
+.highlight-accent {
+  color: var(--color-accent);
+}

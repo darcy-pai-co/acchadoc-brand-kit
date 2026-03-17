@@ -1,0 +1,135 @@
+/**
+ * AcchaDoc Typography System
+ * Fonts: Plus Jakarta Sans (Headings) + Inter (Body)
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap');
+
+:root {
+  /* Font Families */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hindi: 'Noto Sans Devanagari', sans-serif;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Font Sizes - Desktop */
+  --text-h1: 48px;
+  --text-h2: 36px;
+  --text-h3: 24px;
+  --text-large: 18px;
+  --text-base: 16px;
+  --text-small: 14px;
+
+  /* Line Heights */
+  --leading-h1: 56px;
+  --leading-h2: 44px;
+  --leading-h3: 32px;
+  --leading-large: 28px;
+  --leading-base: 24px;
+  --leading-small: 20px;
+}
+
+/* Heading Styles */
+h1, .h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-h1);
+  line-height: var(--leading-h1);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+}
+
+h2, .h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-h2);
+  line-height: var(--leading-h2);
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+h3, .h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-h3);
+  line-height: var(--leading-h3);
+  color: var(--color-text-primary);
+}
+
+/* Body Text Styles */
+.text-large {
+  font-family: var(--font-body);
+  font-weight: var(--weight-medium);
+  font-size: var(--text-large);
+  line-height: var(--leading-large);
+  color: var(--color-text-primary);
+}
+
+body, .text-base {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  color: var(--color-text-primary);
+}
+
+.text-small {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-small);
+  line-height: var(--leading-small);
+  color: var(--color-text-secondary);
+}
+
+/* Hindi Text */
+.text-hindi {
+  font-family: var(--font-hindi);
+}
+
+/* Mobile Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --text-h1: 32px;
+    --text-h2: 28px;
+    --text-h3: 20px;
+
+    --leading-h1: 40px;
+    --leading-h2: 36px;
+    --leading-h3: 28px;
+  }
+}
+
+/* Utility Classes */
+.font-bold {
+  font-weight: var(--weight-bold);
+}
+
+.font-semibold {
+  font-weight: var(--weight-semibold);
+}
+
+.font-medium {
+  font-weight: var(--weight-medium);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+}
